@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Amortization Schedule</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Using Poppins font for a modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Loan Amortization Schedule | Balloon </h1>
+
+    <div class="form-group">
+      <label for="principal">Principal:</label>
+      <input type="number" id="principal" value="10000">
+    </div>
+
+    <div class="form-group">
+      <label for="interestRate">Annual Interest Rate (%):</label>
+      <input type="number" id="interestRate" value="5">
+    </div>
+
+    <div class="form-group">
+      <label for="months">Number of Months:</label>
+      <input type="number" id="months" value="12">
+    </div>
+
+    <div class="form-group">
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" value="2023-01-01">
+    </div>
+
+    <button onclick="generateSchedule()">Generate Schedule</button>
+
+    <div id="scheduleContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
